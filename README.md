@@ -13,6 +13,7 @@
 4. When you run the code, by default it should let you view 5 different types of data from the sensor: Orientation in Euler Angles (aka pitch, yaw, and roll) , Orientation in Quarternion, Orientation in Matrix, Orientation Sdi, and Raw Data for showing accelerometer, gyroscope, and magnetometer data.
 5. As you can see, it does not show timestamps and position data that we need in order to generate point clouds for mapping. Therefore, we need to add those data in using the API provided in the code already.
 6. Here are some files that I have changed in order to add the position data for getting latitude, longitude, and altitude:
+   
    **Header Files**:
    - xsmtmk4displayer.h  -  this file contains all the functions that are used to set different data. I added comments in where I made changes. For each XDI data, you can right click on any one of them -> go to definition to see all the different kinds of data that the API provides for the sensor. 
    - xsmtixdisplayer.h  -  this file is pretty similar to the xsmtmk4displayer, so you can just follow the same procedures in how the file is written. The only difference is the XOS data. The different XOS data can be viewed the same way as the XDI data, right click on any one of them -> go to definition. This will show you all the differetnt XOS data, you will have to choose the one that matches the data you are trying to get.
